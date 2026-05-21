@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>K.I.A Home Service | Crystal Clear. Impeccably Clean.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Premium window washing, pressure washing, and luxury car detailing in Phoenix, Arizona." />
+  <meta name="theme-color" content="#050814" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <div class="diamond" aria-label="K.I.A Logo">
+        <span>K.I.A</span>
+      </div>
+      <div class="logo-text">
+        <h1>K.I.A Home Service</h1>
+        <p>Window Washing • Pressure Washing • Luxury Car Detailing</p>
+      </div>
+    </div>
+    <nav class="nav" id="mainNav">
+      <a href="#hero">Home</a>
+      <a href="#services">Services</a>
+      <a href="#calculator">Instant Quote</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#refer">Refer &amp; Save</a>
+      <a href="#portal">Customer Portal</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h2>Crystal Clear. Impeccably Clean.</h2>
+        <p>Premium Window Washing • Pressure Washing • Luxury Car Detailing in Phoenix, Arizona.</p>
+        <div class="hero-ctas">
+          <a href="#calculator" class="btn primary">Get Your Free Quote</a>
+          <a href="#services" class="btn ghost">View Our Services</a>
+        </div>
+        <div class="hero-contact">
+          <span>(480) 482-9507</span>
+          <span>homeservicekia@gmail.com</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section services">
+      <div class="section-header">
+        <h3>Our Services</h3>
+        <p>All first-time inspections and quotes are free.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="card">
+          <h4>Window Washing</h4>
+          <ul>
+            <li><strong>Exterior windows:</strong> Small $5 each • Large $10 each</li>
+            <li><strong>Interior windows:</strong> Pricing discussed during free inspection</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>Pressure Washing</h4>
+          <ul>
+            <li><strong>Driveways &amp; concrete:</strong> $0.20 per square foot</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>Bronze Package — Express Clean</h4>
+          <p class="tag">Best for weekly maintenance</p>
+          <ul>
+            <li>Exterior hand wash</li>
+            <li>Wheel &amp; tire cleaning</li>
+            <li>Interior vacuum</li>
+            <li>Window wipe-down</li>
+            <li>Dash &amp; console cleaning</li>
+          </ul>
+          <p><strong>Time:</strong> 45–60 minutes</p>
+          <p><strong>Starting at:</strong> $59</p>
+        </div>
+
+        <div class="card popular">
+          <div class="badge">Most Popular</div>
+          <h4>Silver Package — Interior &amp; Exterior Detail</h4>
+          <p class="tag">Best for monthly detailing</p>
+          <ul>
+            <li>Everything in Bronze</li>
+            <li>Interior deep wipe-down</li>
+            <li>Seat shampoo or leather conditioning</li>
+            <li>Door jamb cleaning</li>
+            <li>Spray wax protection</li>
+            <li>Tire shine finish</li>
+          </ul>
+          <p><strong>Time:</strong> 1.5–2 hours</p>
+          <p><strong>Starting at:</strong> $119</p>
+        </div>
+
+        <div class="card">
+          <h4>Gold Package — Full Detail Restoration</h4>
+          <p class="tag">Best for selling or neglected vehicles</p>
+          <ul>
+            <li>Everything in Silver</li>
+            <li>Clay bar paint treatment</li>
+            <li>Light polish enhancement</li>
+            <li>Engine bay cleaning</li>
+            <li>Carpet shampoo extraction</li>
+            <li>Interior stain removal</li>
+          </ul>
+          <p><strong>Time:</strong> 3–4 hours</p>
+          <p><strong>Starting at:</strong> $219</p>
+        </div>
+
+        <div class="card">
+          <h4>Bundles</h4>
+          <ul>
+            <li>Window + Pressure Wash</li>
+            <li>Full Exterior Package</li>
+            <li>Car Detailing + Window Combo</li>
+            <li>Seasonal specials</li>
+            <li>Multi-service discounts</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTANT QUOTE CALCULATOR -->
+    <section id="calculator" class="section calculator">
+      <div class="section-header">
+        <h3>Instant Quote Calculator</h3>
+        <p>Get a fast estimate before your free in-person inspection.</p>
+      </div>
+
+      <div class="calculator-grid">
+        <div class="card">
+          <h4>Window Washing Estimate</h4>
+          <label for="smallWindows">Small exterior windows ($5 each)</label>
+          <input type="number" id="smallWindows" min="0" value="0" />
+          <label for="largeWindows">Large exterior windows ($10 each)</label>
+          <input type="number" id="largeWindows" min="0" value="0" />
+          <button class="btn primary" id="calcWindows">Calculate Window Estimate</button>
+          <p class="result" id="windowResult"></p>
+        </div>
+
+        <div class="card">
+          <h4>Pressure Washing Estimate</h4>
+          <label for="pressureSqft">Driveway / concrete area (sq ft)</label>
+          <input type="number" id="pressureSqft" min="0" value="0" />
+          <button class="btn primary" id="calcPressure">Calculate Pressure Estimate</button>
+          <p class="result" id="pressureResult"></p>
+        </div>
+
+        <div class="card">
+          <h4>Car Detailing Estimate</h4>
+          <label for="detailPackage">Select package</label>
+          <select id="detailPackage">
+            <option value="">Select a package</option>
+            <option value="59">Bronze — from $59</option>
+            <option value="119">Silver — from $119</option>
+            <option value="219">Gold — from $219</option>
+          </select>
+          <button class="btn primary" id="calcDetail">Calculate Detailing Estimate</button>
+          <p class="result" id="detailResult"></p>
+        </div>
+      </div>
+
+      <div class="calculator-cta">
+        <button class="btn ghost" id="saveEstimate">Save Estimate &amp; Book</button>
+        <p id="saveEstimateMsg" class="small"></p>
+      </div>
+    </section>
+
+    <!-- BOOKING FORM -->
+    <section id="contact" class="section contact">
+      <div class="section-header">
+        <h3>Book &amp; Request a Quote</h3>
+        <p>We'll confirm your appointment and follow up with a free inspection if needed.</p>
+      </div>
+
+      <div class="contact-grid">
+        <form id="bookingForm" class="card">
+          <h4>Booking Details</h4>
+          <label for="name">Name</label>
+          <input type="text" id="name" required />
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+          <label for="serviceType">Service Type</label>
+          <select id="serviceType" required>
+            <option value="">Select a service</option>
+            <option>Window Washing</option>
+            <option>Pressure Washing</option>
+            <option>Bronze Detail</option>
+            <option>Silver Detail</option>
+            <option>Gold Detail</option>
+            <option>Bundle</option>
+            <option>Custom Request</option>
+          </select>
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" required />
+          <label for="notes">Notes</label>
+          <textarea id="notes" rows="3" placeholder="Tell us about your home, driveway, or vehicle."></textarea>
+
+          <button type="submit" class="btn primary">Submit &amp; Open Email/SMS</button>
+          <p class="small">Form will open your email app and SMS app with pre-filled details.</p>
+        </form>
+
+        <div class="card contact-info">
+          <h4>Contact &amp; Service Area</h4>
+          <p><strong>Phone:</strong> (480) 482-9507</p>
+          <p><strong>Email:</strong> homeservicekia@gmail.com</p>
+          <p><strong>Service Area:</strong> Phoenix, Queen Creek, Mesa, Chandler, Gilbert, Scottsdale, Tempe.</p>
+          <div class="map-wrapper">
+            <iframe
+              title="Phoenix Service Area Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d213602.7928223823!2d-112.324553!3d33.605414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b12f5b9a8f0a7%3A0xeadc0b1819b7353b!2sPhoenix%2C%20AZ!5e0!3m2!1sen!2sus!4v1700000000000"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY & BEFORE/AFTER -->
+    <section id="gallery" class="section gallery">
+      <div class="section-header">
+        <h3>Gallery &amp; Transformations</h3>
+        <p>See the difference premium care makes.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <div class="ba-wrapper">
+            <img
+              src="https://images.pexels.com/photos/3768910/pexels-photo-3768910.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Before detailing"
+              class="ba-img ba-before"
+            />
+            <img
+              src="https://images.pexels.com/photos/3768914/pexels-photo-3768914.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="After detailing"
+              class="ba-img ba-after"
+            />
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              class="ba-slider"
+              aria-label="Before and after slider"
+            />
+          </div>
+          <p class="small">Luxury car detailing — before &amp; after.</p>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Crystal clear residential window washing"
+          />
+          <p class="small">Crystal clear residential window washing.</p>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.pexels.com/photos/4792491/pexels-photo-4792491.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Pressure-washed driveway"
+          />
+          <p class="small">Pressure-washed driveway — bright and renewed.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section reviews">
+      <div class="section-header">
+        <h3>Customer Reviews</h3>
+        <p>Trusted by homeowners and car enthusiasts across Phoenix.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"My car has never looked this good. The Gold package is worth every penny."</p>
+          <p class="small">— Daniel R.</p>
+        </div>
+        <div class="card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"Windows so clean they disappear. Professional, on time, and detail-oriented."</p>
+          <p class="small">— Melissa K.</p>
+        </div>
+        <div class="card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"Driveway looks brand new. Booking was easy and communication was excellent."</p>
+          <p class="small">— Javier L.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq">
+      <div class="section-header">
+        <h3>Frequently Asked Questions</h3>
+      </div>
+
+      <div class="faq-grid">
+        <details>
+          <summary>Do you bring your own water and equipment?</summary>
+          <p>Yes. We arrive fully equipped with professional-grade tools, products, and water solutions when needed.</p>
+        </details>
+        <details>
+          <summary>Do I need to be home during the service?</summary>
+          <p>Not always. As long as we have access to the areas being cleaned and clear instructions, we can work while you're away.</p>
+        </details>
+        <details>
+          <summary>What payment methods do you accept?</summary>
+          <p>We accept Zelle, Venmo, Cash App, major cards (via Stripe), Apple Pay, and Google Pay.</p>
+        </details>
+        <details>
+          <summary>How far in advance should I book?</summary>
+          <p>We recommend booking 3–5 days in advance, but same-week appointments are often available.</p>
+        </details>
+        <details>
+          <summary>Are you licensed and insured?</summary>
+          <p>Yes, K.I.A Home Service is fully licensed and insured for your peace of mind.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- REFER & SAVE -->
+    <section id="refer" class="section refer">
+      <div class="section-header">
+        <h3>Refer &amp; Save</h3>
+        <p>Share K.I.A Home Service with friends and earn discounts.</p>
+      </div>
+
+      <div class="refer-grid">
+        <div class="card">
+          <h4>Your Referral Code</h4>
+          <p class="small">Share this code with friends. When they book, both of you save.</p>
+          <div class="referral-code" id="referralCode">KIA-XXXX</div>
+          <button class="btn ghost" id="generateReferral">Generate / Refresh Code</button>
+          <p class="small" id="referralMsg"></p>
+        </div>
+
+        <div class="card">
+          <h4>How It Works</h4>
+          <ul>
+            <li>Share your code with friends or family.</li>
+            <li>They mention it when booking or in the notes.</li>
+            <li>You both receive a discount on your next service.</li>
+            <li>Referral history is stored in your browser for easy tracking.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUSTOMER PORTAL -->
+    <section id="portal" class="section portal">
+      <div class="section-header">
+        <h3>Customer Portal</h3>
+        <p>Rebook in seconds and view your saved details.</p>
+      </div>
+
+      <div class="portal-grid">
+        <div class="card">
+          <h4>Your Saved Info</h4>
+          <p class="small">We store your details locally in your browser for faster booking.</p>
+          <div id="portalInfo" class="portal-info small"></div>
+          <button class="btn ghost" id="clearPortal">Clear Saved Info</button>
+        </div>
+
+        <div class="card">
+          <h4>Past Bookings (Local)</h4>
+          <ul id="portalBookings" class="portal-bookings small"></ul>
+        </div>
+
+        <div class="card">
+          <h4>Admin Dashboard</h4>
+          <p class="small">For internal use. Password protected.</p>
+          <label for="adminPassword">Admin Password</label>
+          <input type="password" id="adminPassword" placeholder="Enter admin password" />
+          <button class="btn primary" id="adminLogin">View Dashboard</button>
+          <div id="adminDashboard" class="admin-dashboard small hidden">
+            <p><strong>Total Bookings:</strong> <span id="adminTotalBookings">0</span></p>
+            <p><strong>Estimated Revenue:</strong> $<span id="adminRevenue">0</span></p>
+            <p><strong>Most Popular Service:</strong> <span id="adminPopularService">N/A</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <div class="diamond small-diamond" aria-label="K.I.A Logo">
+          <span>K.I.A</span>
+        </div>
+        <p>K.I.A Home Service</p>
+        <p>Crystal Clear. Impeccably Clean.</p>
+      </div>
+      <div class="footer-contact">
+        <p><strong>Phone:</strong> (480) 482-9507</p>
+        <p><strong>Email:</strong> homeservicekia@gmail.com</p>
+        <p><strong>Service Area:</strong> Phoenix • Queen Creek • Mesa • Chandler • Gilbert • Scottsdale • Tempe</p>
+      </div>
+      <div class="footer-links">
+        <p><strong>Quick Links</strong></p>
+        <a href="#hero">Home</a>
+        <a href="#services">Services</a>
+        <a href="#calculator">Instant Quote</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#refer">Refer &amp; Save</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <p><strong>Social</strong></p>
+        <div class="social-icons">
+          <span title="Instagram">IG</span>
+          <span title="Facebook">FB</span>
+          <span title="TikTok">TT</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> K.I.A Home Service. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
