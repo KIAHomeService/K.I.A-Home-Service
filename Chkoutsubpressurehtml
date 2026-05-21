@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subscribe — Monthly Pressure Wash</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo">
+    <img src="assets/kia-logo-diamond.png" alt="K.I.A Home Service">
+  </div>
+
+  <nav>
+    <a href="index.html#services">Services</a>
+    <a href="subscriptions.html">Subscriptions</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="checkout">
+  <h1>Subscribe — Monthly Pressure Wash</h1>
+  <p>$89/month • Driveway & walkways</p>
+
+  <h2>Subscription Form</h2>
+  <form action="https://formsubmit.co/homeservicekia@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="New Subscription — Monthly Pressure Wash">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <label>Name</label>
+    <input type="text" name="Name" required>
+
+    <label>Phone</label>
+    <input type="text" name="Phone" required>
+
+    <label>Email (optional)</label>
+    <input type="email" name="Email">
+
+    <label>Preferred Start Date</label>
+    <input type="date" name="Start Date" required>
+
+    <label>Notes</label>
+    <textarea name="Notes" placeholder="Address, driveway size, etc."></textarea>
+
+    <button type="submit" class="btn primary">Submit Subscription</button>
+  </form>
+
+  <h2>Payment Options</h2>
+  <ul>
+    <li><strong>Venmo:</strong> @isaacanderson21</li>
+    <li><strong>Zelle:</strong> 480-482-9507</li>
+    <li><strong>Apple Pay:</strong> 480-482-9507</li>
+    <li><strong>Cash:</strong> By arrangement</li>
+  </ul>
+
+  <p>We’ll confirm your subscription and schedule by text after we receive your form and first payment.</p>
+</section>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> K.I.A Home Service</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
