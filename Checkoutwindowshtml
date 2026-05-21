@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout — Window Washing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo">
+    <img src="assets/kia-logo-diamond.png" alt="K.I.A Home Service">
+  </div>
+
+  <nav>
+    <a href="index.html#services">Services</a>
+    <a href="subscriptions.html">Subscriptions</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="checkout">
+  <h1>Checkout — Window Washing</h1>
+  <p>Exterior windows • Starting at $79</p>
+
+  <h2>Booking Form</h2>
+  <form action="https://formsubmit.co/homeservicekia@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="New Booking — Window Washing">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <label>Name</label>
+    <input type="text" name="Name" required>
+
+    <label>Phone</label>
+    <input type="text" name="Phone" required>
+
+    <label>Email (optional)</label>
+    <input type="email" name="Email">
+
+    <label>Preferred Date</label>
+    <input type="date" name="Preferred Date" required>
+
+    <label>Notes</label>
+    <textarea name="Notes" placeholder="Number of windows, stories, etc."></textarea>
+
+    <button type="submit" class="btn primary">Submit Booking</button>
+  </form>
+
+  <h2>Payment Options</h2>
+  <ul>
+    <li><strong>Venmo:</strong> @isaacanderson21</li>
+    <li><strong>Zelle:</strong> 480-482-9507</li>
+    <li><strong>Apple Pay:</strong> 480-482-9507</li>
+    <li><strong>Cash:</strong> Pay at time of service</li>
+  </ul>
+
+  <p>After sending payment, text a screenshot and your name to <a href="sms:+14804829507">480‑482‑9507</a> to confirm.</p>
+</section>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> K.I.A Home Service</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
